@@ -2,9 +2,9 @@ import React from "react";
 import { MagnifyingGlass, List, Heart, User } from "@phosphor-icons/react";
 import LogoImageMobile from "../../assets/logo-mobile.png";
 import LogoImage from "../../assets/logo-maeztra.png";
-import IconMinicart from "/icn-minicart.svg";
-import IconUser from "/icn-user.svg";
-import IconWishlist from "/icn-wishlist.svg";
+import IconMinicart from "../../assets/icn-minicart.svg";
+import IconUser from "../../assets/icn-user.svg";
+import IconWishlist from "../../assets/icn-wishlist.svg";
 
 function Header() {
 
