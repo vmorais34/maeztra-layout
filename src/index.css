@@ -60,6 +60,21 @@ h1 {
   line-height: 1.1;
 }
 
+input{
+  background: #ffffff;
+  padding: 10px 8px;
+  color: #787D83;
+  border: 1px solid #C4C4C4;
+  border-radius: 5px;
+}
+input:focus{
+  outline: none;
+  border: none;
+}
+input::placeholder{
+  color: #353535;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

@@ -7,6 +7,7 @@ export default {
       md: '768px',
       lg: '1026px',
       xl: '1440px',
+      '2xl': '1920px',
     },
     colors: {
       base: '#FAA500',
