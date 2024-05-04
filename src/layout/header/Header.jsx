@@ -47,7 +47,7 @@ function Header() {
               <div class="hidden lg:flex items-center justify-center">
                   <div class="flex items-center justify-center">
                     <div class="px-2 flex items-center justify-center">                    
-                      <img src={IconUser} alt="Icone Usuário"/>        
+                      <img src={`/maeztra-layout${IconUser}`} alt="Icone Usuário"/>        
                       {/* <User class="" color="#000000" size={24} /> */}
                       <span class="px-2 text-textPrimary text-sm">
                         Minha Conta
