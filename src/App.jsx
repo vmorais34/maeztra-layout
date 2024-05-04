@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import "./App.css";
+import Header from "./layout/header/Header";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -7,12 +8,9 @@ function App() {
   return (
     <>
     {/* header */}
-    <header class="w-full h-auto block bg-white">
-      <div class="text-white font-normal bg-slate-700 py-2">
-        Acompanhe as melhores promoções disponíveis aqui na Maeztra.
-      </div>
-    </header>
-    <main>
+    <Header />
+    <main class="h-96"></main>
+    <main class="h-96">
     </main>
     <footer>
        Develop by Viniciu5morais
