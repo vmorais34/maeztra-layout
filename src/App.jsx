@@ -6,12 +6,17 @@ function App() {
 
   return (
     <>
-      <h1>Vite + React Boilerplate</h1>
-      <div className="m-4 p-4">
-        <p className="m-4">
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+    {/* header */}
+    <header class="w-full h-auto block bg-white">
+      <div class="text-white font-normal bg-slate-700 py-2">
+        Acompanhe as melhores promoções disponíveis aqui na Maeztra.
       </div>
+    </header>
+    <main>
+    </main>
+    <footer>
+       Develop by Viniciu5morais
+    </footer>
     </>
   );
 }

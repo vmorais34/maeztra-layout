@@ -1,7 +1,16 @@
 # Maeztra Layout
 
-[Figma](https://www.figma.com/file/3RqPfS5PW9whbQNCTTaoqA/[2020-09]-MZ---Layout-Teste-de-vagas-para-time-de-Devs?type=design&node-id=2-5&mode=design&t=5ta21KUlQzGSJDVu-0)
-[Repo]
+## 🔗 Links
+[![site](https://img.shields.io/badge/site-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://vmorais34.github.io/maeztra-layout/)
+
+[![Figma](https://img.shields.io/badge/Figma-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.figma.com/file/3RqPfS5PW9whbQNCTTaoqA/[2020-09]-MZ---Layout-Teste-de-vagas-para-time-de-Devs?type=design&node-id=2-5&mode=design&t=5ta21KUlQzGSJDVu-0)
+
+[![Repositório](https://img.shields.io/badge/repo-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/vmorais34/maeztra-layout/)
+
+
+<!-- Fixing the path urls in dist folder after run yarn build -->
+<script type="module" crossorigin src="/maeztra-layout/assets/index-f6afd04c.js"></script>
+<link rel="stylesheet" href="/maeztra-layout/assets/index-770eb46f.css">
 
 <!-- 
 This boilerplate provides you with a starting point for your React projects, complete with Tailwind CSS, PostCSS, Autoprefixer, and SWC for JavaScript optimization. -->
@@ -54,4 +63,4 @@ This boilerplate provides you with a starting point for your React projects, com
 
 ## Author
 
-- [Vinicius S. Morais](https://github.com/vmorais34)
+-🚀[Vinicius S. Morais](https://github.com/vmorais34)
