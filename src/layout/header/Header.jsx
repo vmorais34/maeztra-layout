@@ -5,6 +5,7 @@ import LogoImage from "../../assets/logo-maeztra.png";
 import IconMinicart from "../../assets/icn-minicart.svg";
 import IconUser from "../../assets/icn-user.svg";
 import IconWishlist from "../../assets/icn-wishlist.svg";
+import IconMenuDress from "../../assets/icn-menu-dress.svg";
 
 function Header() {
 
@@ -47,15 +48,15 @@ function Header() {
               <div class="hidden lg:flex items-center justify-center">
                   <div class="flex items-center justify-center">
                     <div class="px-2 flex items-center justify-center">                    
-                      <img src={`/maeztra-layout${IconUser}`} alt="Icone Usuário" class="w-full h-auto max-w-[14px]"/>
-                      {/* <img src={IconUser} alt="Icone Favoritos" class="w-full h-auto max-w-[14px]"/> */}
+                      {/* <img src={`/maeztra-layout${IconUser}`} alt="Icone Usuário" class="w-full h-auto max-w-[14px]"/> */}
+                      <img src={IconUser} alt="Icone Favoritos" class="w-full h-auto max-w-[14px]"/>
                       <span class="px-2 text-textPrimary text-sm">
                         Minha Conta
                       </span>
                     </div>
                     <div class="px-2 flex items-center justify-center">         
-                      <img src={`/maeztra-layout${IconWishlist}`} alt="Icone Favoritos" class="w-full h-auto max-w-[19px]"/>
-                      {/* <img src={IconWishlist} alt="Icone Favoritos"  class="w-full h-auto max-w-[19px]"/> */}
+                      {/* <img src={`/maeztra-layout${IconWishlist}`} alt="Icone Favoritos" class="w-full h-auto max-w-[19px]"/> */}
+                      <img src={IconWishlist} alt="Icone Favoritos"  class="w-full h-auto max-w-[19px]"/>
                       <span class="px-2 text-textPrimary text-sm">
                         Minha Conta
                       </span>
@@ -64,8 +65,8 @@ function Header() {
               </div>
               {/* Wishlist */}
               <div class="w-full flex items-center justify-center lg:border lg:border-base lg:rounded-lg lg:p-3 lg:py-[14px] lg:max-w-[140px]">
-                <img src={`/maeztra-layout${IconMinicart}`} alt="Icone Minicart" class="w-full h-auto max-w-[24px] lg:max-w-[14px]" />
-                {/* <img class="w-full h-auto max-w-[24px] lg:max-w-[14px]" src={IconMinicart} alt="Minicart"/> */}
+                {/* <img src={`/maeztra-layout${IconMinicart}`} alt="Icone Minicart" class="w-full h-auto max-w-[24px] lg:max-w-[14px]" /> */}
+                <img class="w-full h-auto max-w-[24px] lg:max-w-[14px]" src={IconMinicart} alt="Minicart"/>
                 <span class="hidden lg:block ml-2 text-secondary text-sm">
                   Meu Carrinho
                 </span>
@@ -80,7 +81,8 @@ function Header() {
             <ul class="flex w-full h-auto items-center justify-center">
               <li>
                 <a href="" class="flex items-center justify-center w-auto min-w-[146px] font-bold text-base hover:text-base py-3">
-                  <img src={IconUser} alt="Icone Menu Novidades" class="mr-2 w-full h-auto max-w-[14px]"/>
+                {/* <img src={`/maeztra-layout${IconMenuDress}`} alt="Icone Menu Novidades" class="mr-2 w-full h-auto max-w-[14px]" /> */}
+                  <img src={IconMenuDress} alt="Icone Menu Novidades" class="mr-2 w-full h-auto max-w-[14px]"/>
                   Novidades
                 </a>
               </li>
