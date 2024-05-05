@@ -17,7 +17,11 @@ export default {
       textPrimary: '#353535',
       textSecondary: '#FFFFFF'
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        'smMenu': '0px 4px 6px 0px #00000014'
+      }
+    },
   },
   plugins: [],
 };
