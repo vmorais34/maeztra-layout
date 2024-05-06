@@ -8,9 +8,16 @@
 [![Repositório](https://img.shields.io/badge/repo-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/vmorais34/maeztra-layout/)
 
 
+### Fluxo de build
+
+1. Path das imagens
+2. yarn build
+3. trocas os arquivos do dist para o docs
+4. Arruma os paths no index.html
+
 ### Fix paths in index.html on root folder
 <!-- Fixing the path urls in dist folder after run yarn build -->
-<link rel="icon" type="image/svg+xml" href="/maeztra-layout/assets/favicon.png" />
+<link rel="icon" type="image/svg+xml" href=" /maeztra-layout/assets/favicon.png" />
 <script type="module" crossorigin src="/maeztra-layout/assets/index-f6afd04c.js"></script>
 <link rel="stylesheet" href="/maeztra-layout/assets/index-770eb46f.css">
 

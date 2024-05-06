@@ -19,7 +19,7 @@ export default {
     },
     extend: {
       boxShadow: {
-        'smMenu': '0px 4px 6px 0px #00000014'
+        'smMenu': '0 0 #0000, 0 0 #0000, 0px 4px 6px 0px #00000014, 0 0 #0000'
       }
     },
   },

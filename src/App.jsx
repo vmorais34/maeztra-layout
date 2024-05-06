@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import "./App.css";
+import Footer from "./layout/footer/Footer";
 import Header from "./layout/header/Header";
 
 function App() {
@@ -12,9 +13,7 @@ function App() {
     <main class="h-96"></main>
     <main class="h-96">
     </main>
-    <footer>
-       Develop by Viniciu5morais
-    </footer>
+    <Footer />
     </>
   );
 }
