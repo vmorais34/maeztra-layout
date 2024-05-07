@@ -14,6 +14,7 @@ export default {
       primary: '#FFFFFF',
       secondary: '#353535',
       tertiary: '#EFEFEF',
+      quartiary: '#FAFAFA',
       textPrimary: '#353535',
       textSecondary: '#FFFFFF'
     },

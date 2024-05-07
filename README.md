@@ -10,7 +10,7 @@
 
 ### Fluxo de build
 
-1. Path das imagens
+1. Path dos icones -- sem ser phosporicons
 2. yarn build
 3. trocas os arquivos do dist para o docs
 4. Arruma os paths no index.html
