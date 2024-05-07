@@ -18,10 +18,10 @@ function Header() {
         <div class="shadow-smMenu w-full">
           <div class="flex items-center justify-between w-full text-base container px-4 py-6 lg:py-5 mx-auto">
             <div class="flex items-center gap-0">
-              <div class="md:hidden p-2 cursor-pointer">
+              <div class="md:hidden p-0 cursor-pointer">
                 <List size={24} />
               </div>
-              <div class="px-3 w-max">
+              <div class="p-2 px-3 w-max h-10 flex items-center justify-center">
                 <h1 class="leading-none">
                   <a class="block" href="/">
                     <picture>
@@ -34,12 +34,12 @@ function Header() {
             </div>
 
             <div class="flex items-center justify-between lg:w-full">
-              <div class="flex items-center justify-start  p-2 cursor-pointer lg:w-full lg:ml-24 lg:mr-8 lg:max-w-[791px]"> 
+              <div class="flex items-center justify-start pr-[10px] p-2 cursor-pointer lg:w-full lg:ml-24 lg:mr-8 lg:max-w-[791px]"> 
                 <input class="hidden lg:block w-full max-w-[672px] py-2 lg:bg-tertiary lg:rounded-r-none border-0 pl-6" type="text" placeholder="O Que Você Busca?"/>
                 <span class="hidden lg:block text-primary lg:bg-base lg:rounded-lg lg:min-w-[119px] text-center py-2 lg:-ml-2">
                   Buscar
                 </span>
-                <MagnifyingGlass class="lg:hidden" color="#000000" size={24} />
+                <MagnifyingGlass class="lg:hidden min-w-[32px] min-h-[32px]" color="#000000" size={24} />
               </div>
 
               {/* Minicart */}
@@ -64,10 +64,10 @@ function Header() {
                       </div>
                     </div>
                 </div>
-                {/* Wishlist */}
-                <div class="w-full flex items-center justify-center lg:border lg:border-base lg:rounded-lg lg:p-3 lg:py-[14px] lg:max-w-[140px]">
-                  <img src={`/maeztra-layout${IconMinicart}`} alt="Icone Minicart" class="w-full h-auto max-w-[24px] lg:max-w-[14px]" />
-                  {/* <img class="w-full h-auto max-w-[24px] lg:max-w-[14px]" src={IconMinicart} alt="Minicart"/> */}
+                {/* Cart */}
+                <div class="w-full flex items-center justify-center pl-[10px] p-2  lg:border lg:border-base lg:rounded-lg lg:p-3 lg:py-[14px] lg:max-w-[140px]">
+                  <img src={`/maeztra-layout${IconMinicart}`} alt="Icone Minicart" class="w-full h-auto min-w-[20px] min-h-[24px] max-w-[24px] lg:max-w-[14px]" />
+                  {/* <img class="w-full h-auto min-w-[20px] min-h-[24px] max-w-[24px] lg:max-w-[14px]" src={IconMinicart} alt="Minicart"/> */}
                   <span class="hidden lg:block ml-2 text-secondary text-sm">
                     Meu Carrinho
                   </span>
@@ -79,42 +79,42 @@ function Header() {
         </div>
         {/* Menu */}
         <div class="hidden lg:block">
-          <nav class="block container">
+          <nav class="block container mx-auto">
             <ul class="flex w-full h-auto items-center justify-center">
-              <li>
-                <a href="" class="flex items-center justify-center w-auto min-w-[146px] font-bold text-base hover:text-base py-3">
+              <li class="pr-[15px]">
+                <a href="" class="flex items-center justify-center w-auto xl:min-w-[146px] font-bold text-base hover:text-base py-3">
                 <img src={`/maeztra-layout${IconMenuDress}`} alt="Icone Menu Novidades" class="mr-2 w-full h-auto max-w-[14px]" />
                   {/* <img src={IconMenuDress} alt="Icone Menu Novidades" class="mr-2 w-full h-auto max-w-[14px]"/> */}
                   Novidades
                 </a>
               </li>
-              <li>
-                <a href="" class="flex items-center justify-center w-auto min-w-[146px] text-textPrimary hover:text-textPrimary py-3">
+              <li class="px-[15px]">
+                <a href="" class="flex items-center justify-center w-auto xl:min-w-[146px] text-textPrimary hover:text-textPrimary py-3">
                   Vestidos
                 </a>
               </li>
-              <li>
-                <a href="" class="flex items-center justify-center w-auto min-w-[146px] text-textPrimary hover:text-textPrimary py-3">  
+              <li class="px-[15px]">
+                <a href="" class="flex items-center justify-center w-auto xl:min-w-[146px] text-textPrimary hover:text-textPrimary py-3">  
                   Roupas
                 </a>
               </li>
-              <li>
-                <a href="" class="flex items-center justify-center w-auto min-w-[146px] text-textPrimary hover:text-textPrimary py-3">  
+              <li class="px-[15px]">
+                <a href="" class="flex items-center justify-center w-auto xl:min-w-[146px] text-textPrimary hover:text-textPrimary py-3">  
                   Sapatos
                 </a>
               </li>
-              <li>
-                <a href="" class="flex items-center justify-center w-auto min-w-[146px] text-textPrimary hover:text-textPrimary py-3">  
+              <li class="px-[15px]">
+                <a href="" class="flex items-center justify-center w-auto xl:min-w-[146px] text-textPrimary hover:text-textPrimary py-3">  
                   Lingerie
                 </a>
               </li>
-              <li>
-                <a href="" class="flex items-center justify-center w-auto min-w-[146px] text-textPrimary hover:text-textPrimary py-3">  
+              <li class="px-[15px]">
+                <a href="" class="flex items-center justify-center w-auto xl:min-w-[146px] text-textPrimary hover:text-textPrimary py-3">  
                   Acessórios
                 </a>
                 </li>
-              <li>
-                <a href="" class="flex items-center justify-center w-auto min-w-[146px] uppercase text-textPrimary hover:text-textPrimary py-3">  
+                <li class="pl-[15px]">
+                <a href="" class="flex items-center justify-center w-auto xl:min-w-[146px] uppercase text-textPrimary hover:text-textPrimary py-3">  
                   Outlet
                 </a>
               </li>

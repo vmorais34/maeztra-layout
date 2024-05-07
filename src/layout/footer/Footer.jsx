@@ -15,7 +15,7 @@ function Footer() {
     <footer class="w-full h-auto block bg-secondary border-t-[1px] border-tertiary">
       <div class="block">
         {/* Menu */}
-        <div class="block w-full py-10 pb-[52px] bg-primary">
+        <div class="block w-full py-10 pb-[52px] bg-quartiary">
           <nav class="block px-8 lg:px-0 container mx-auto">
             <ul class="flex flex-col lg:flex-row items-center lg:items-start justify-center">
               <li class="flex flex-row lg:flex-col items-center justify-between w-full lg:justify-center">
@@ -131,25 +131,25 @@ function Footer() {
             <ul class="list-none flex items-center justify-center">
                 <li>
                   <a href="#" class="block w-auto px-3">
-                    <img src={`/maeztra-layout${IconFacebook}`} class="w-full h-auto" alt="Master"/>
+                    <img src={`/maeztra-layout${IconMaster}`} class="w-full h-auto" alt="Master"/>
                     {/* <img src={IconMaster} class="w-full h-auto" alt="Master" />               */}
                   </a>
                 </li>
                 <li>
                   <a href="#" class="block w-auto px-3">
-                    <img src={`/maeztra-layout${IconFacebook}`} class="w-full h-auto" alt="Visa"/>
+                    <img src={`/maeztra-layout${IconVisa}`} class="w-full h-auto" alt="Visa"/>
                     {/* <img src={IconVisa} class="w-full h-auto" alt="Visa" /> */}
                   </a>
                 </li>
                 <li>
                   <a href="#" class="block w-auto px-3">
-                    <img src={`/maeztra-layout${IconFacebook}`} class="w-full h-auto" alt="Master"/>
+                    <img src={`/maeztra-layout${IconMaster}`} class="w-full h-auto" alt="Master"/>
                     {/* <img src={IconMaster} class="w-full h-auto" alt="Master" />               */}
                   </a>
                 </li>
                 <li>
                   <a href="#" class="block w-auto px-3">
-                    <img src={`/maeztra-layout${IconFacebook}`} class="w-full h-auto" alt="Visa"/>
+                    <img src={`/maeztra-layout${IconVisa}`} class="w-full h-auto" alt="Visa"/>
                     {/* <img src={IconVisa} class="w-full h-auto" alt="Visa" /> */}
                   </a>
                 </li>
@@ -160,15 +160,13 @@ function Footer() {
                 <span class="block w-full text-xs mb-1">
                   Powered by                  
                 </span>
-                <img src={`/maeztra-layout${IconVTEX}`} class="w-full h-auto" alt="VTEX"/>
-                {/* <img src={IconVTEX} class="w-full h-auto" alt="VTEX" /> */}
+                <img src={IconVTEX} class="w-full h-auto" alt="VTEX" />
               </div>
               <div class="flex flex-col items-start justify-between lg:min-h-[46px]">
                 <span class="block w-full text-xs mb-1">
                   Develop by                  
                 </span>
-                <img src={`/maeztra-layout${IconMaeztra}`} class="w-full h-auto" alt="Maeztra"/>
-                {/* <img src={IconMaeztra} class="w-full h-auto" alt="Maeztra" /> */}
+                <img src={IconMaeztra} class="w-full h-auto" alt="Maeztra" />
               </div>            
             </div>
           </div>
