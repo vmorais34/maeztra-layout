@@ -66,7 +66,7 @@ function Modal({isOpen, setIsModalOpen}) {
               </strong>
             </p>
 
-            <form action="" class="flex flex-col items-center justify-center w-full h-fit">
+            <form action="" class="flex flex-col items-center justify-center w-full h-fit relative">
               <input type="text" onChange={handleInput} placeholder="Digite seu e-mail" class="text-sm placeholder:text-xs placeholder:text-textPrimary rounded-[10px] lg:rounded-xl w-full mb-[12.5px] px-3 py-[9px] border-[#C4C4C4] focus:border-solid focus:border-secondary focus:border-[1px] focus-within:border-secondary" />
 
               <button class="bg-base rounded-[10px] lg:rounded-xl w-full p-4 py-[9px] flex items-center justify-center hover:border-base focus:outline-none" onClick={handleOnClick}>
@@ -76,7 +76,7 @@ function Modal({isOpen, setIsModalOpen}) {
                 <img src={`/maeztra-layout${IconBtnSend}`} alt="" class="w-full h-auto min-w-[12px] min-h-[20px] max-w-[24px] lg:max-w-[12px] ml-2" />
                 {/* <img class="w-full h-auto min-w-[12px] min-h-[20px] max-w-[24px] lg:max-w-[12px] ml-2" src={IconBtnSend} alt=""/> */}
               </button>
-              {erro && <p class="text-[#FA1400] font-bold text-[10px] leading-[16px] lg:text-sm lg:leading-6 lg:absolute -lg:bottom-3 left-0" >{erro}</p>}
+              {erro && <p class="text-[#FA1400] font-bold text-[10px] leading-[16px] lg:text-sm lg:leading-6 lg:absolute lg:bottom-[-24px] left-0" >{erro}</p>}
             </form>
           </div>
         </div>
