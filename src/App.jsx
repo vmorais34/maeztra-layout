@@ -8,26 +8,27 @@ import Modal from "./layout/modal/Modal";
 import Newsletter from "./layout/newsletter/Newsletter";
 
 function App() {
-  // const [count, setCount] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+ 
   useEffect(() =>{
     setIsModalOpen(true);
   }, [])
 
   return (
     <>
-    {/* header */}
-    <Header />
-    <main class="w-full block">
-      <BannerFull />
-    </main>
-    <div class="bg-quartiary py-8 px-[30px] lg:px-0">
-      <Hero />
-    </div>
-    <Modal isOpen={isModalOpen} />
-    <Newsletter />
-    <Footer />
+      <Header />
+      <main class="w-full block">
+        <BannerFull />
+        {/* Benefits - Tipbar */}
+        {/* Brands */}
+        {/* Shelf */}
+        <div class="bg-quartiary py-8 px-[30px] lg:px-0">
+          <Hero />
+        </div>
+        <Newsletter />
+      </main>
+      <Footer />
+      <Modal isOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
     </>
   );
 }

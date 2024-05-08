@@ -18,7 +18,8 @@ export default {
       textPrimary: '#353535',
       textSecondary: '#FFFFFF',
       textTertiary: '#464B54',
-      textQuartiary: '#464B54'
+      textQuartiary: '#464B54',
+      textDefault: '#787D83'
     },
     extend: {
       boxShadow: {
