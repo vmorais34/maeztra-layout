@@ -16,9 +16,13 @@ function Hero() {
           </p>
         </article>
         <article class="w-full block">    
-          <picture>
-            <source media="(min-width:650px)" srcset={BannerHero} />
-            <img src={BannerHeroMobile} alt="Nova Coleção de outono-inverno" class="w-full"/>
+          <picture>          
+            {/* Produção vai esse */}
+            <source media="(min-width:650px)" srcset={`/maeztra-layout${BannerHero}`} />
+            <img srcset={`/maeztra-layout${BannerHeroMobile}`} alt="Nova Coleção de outono-inverno" class="w-full"/>
+
+            {/* <source media="(min-width:650px)" srcset={BannerHero} />
+            <img src={BannerHeroMobile} alt="Nova Coleção de outono-inverno" class="w-full"/> */}
           </picture>
         </article>
       </div>

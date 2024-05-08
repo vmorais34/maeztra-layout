@@ -27,9 +27,13 @@ function BannerFull() {
         <div class="flex w-full flex-col lg:items-center relative">
           <article class="w-full block">
             <picture>
-              <source media="(min-width:1024px)" srcset={srcBannerFull} />
+              {/* Produção vai esse */}
+              <source media="(min-width:1024px)" srcset={`/maeztra-layout${srcBannerFull}`} />
+              <source media="(min-width:640px)" srcset={`/maeztra-layout${srcBannerFull}`} />
+              <img srcset={`/maeztra-layout${BannerFullMobile}`} alt="Logo Maeztra" class="w-full"/>
+              {/* <source media="(min-width:1024px)" srcset={srcBannerFull} />
               <source media="(min-width:640px)" srcset={srcBannerFull} />
-              <img src={BannerFullMobile} alt="Logo Maeztra" class="w-full"/>
+              <img src={BannerFullMobile} alt="Logo Maeztra" class="w-full"/> */}
             </picture>
           </article>
           <article class="text-primary absolute container pr-12 lg:pr-0 mx-auto max-w-[70%] sm:max-w-[75%] md:max-w-[80%] lg:max-w-[768px] xl:max-w-[1026px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">

@@ -16,7 +16,9 @@ export default {
       tertiary: '#EFEFEF',
       quartiary: '#FAFAFA',
       textPrimary: '#353535',
-      textSecondary: '#FFFFFF'
+      textSecondary: '#FFFFFF',
+      textTertiary: '#464B54',
+      textQuartiary: '#464B54'
     },
     extend: {
       boxShadow: {
