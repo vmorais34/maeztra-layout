@@ -1,0 +1,9 @@
+/* Arrows Brands*/
+.brands .slick-prev,
+.brands .slick-next{
+    display: none !important;
+}
+
+.slick-track .slick-slide{
+    background: transparent;
+}

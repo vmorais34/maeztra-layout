@@ -1,0 +1,23 @@
+/* Arrows Shelf*/
+.shelf .slick-prev{
+    left: 0;
+}
+.shelf .slick-next{
+    right: 0;
+}
+.shelf .slick-prev,
+.shelf .slick-next{
+    /* display: none !important; */
+}
+
+.slick-track .slick-slide{
+    background: transparent;
+}
+
+/* Toastify */
+.Toastify{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #000;
+}

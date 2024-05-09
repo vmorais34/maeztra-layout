@@ -1,0 +1,20 @@
+/* Arrows Brands*/
+.tipbar .slick-prev,
+.tipbar .slick-next{
+    display: none !important;
+}
+
+.slick-track .slick-slide{
+    background: transparent;
+}
+
+.tipbar .slick-track .slick-slide{
+    /* margin: 0 6.5px; */
+    margin: 0 -2.5px;
+}
+
+@media screen and (max-width: 1024px){
+    .tipbar .slick-track{
+        left: 16px;
+    }
+}

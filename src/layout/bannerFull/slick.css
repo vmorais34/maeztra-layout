@@ -118,6 +118,9 @@
     display: none;
 }
 
+.slick-track{
+    background: #FFFFFF;
+}
 .slick-track .slick-slide,
 .slick-track .slick-slide .slick-cloned,
 .slick-track .slick-slide .slick-active{

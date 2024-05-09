@@ -22,9 +22,14 @@
 <link rel="stylesheet" href="/maeztra-layout/assets/index-770eb46f.css">
 
 <!-- 
+
 This boilerplate provides you with a starting point for your React projects, complete with Tailwind CSS, PostCSS, Autoprefixer, and SWC for JavaScript optimization. -->
 
 ## Features
+
+   ✨ React Slide.
+
+   ✨ Toastify.
 
    ✨ Latest Vite.js (v4.4.9) for blazing-fast development.
    

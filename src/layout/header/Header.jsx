@@ -25,7 +25,7 @@ function Header() {
                 <h1 class="leading-none">
                   <a class="block" href="/">
                     <picture>
-                      <source media="(min-width:650px)" srcset={LogoImage} />
+                      <source media="(min-width:650px)" srcSet={LogoImage} />
                       <img src={LogoImageMobile} alt="Logo Maeztra"/>
                     </picture>
                   </a>

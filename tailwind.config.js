@@ -15,10 +15,15 @@ export default {
       secondary: '#353535',
       tertiary: '#EFEFEF',
       quartiary: '#FAFAFA',
+      skuOne: '#DEAC71',
+      skuTwo: '#D37164',
+      skuThree: '#6497D3',
+      skuFour: '#3C3B79',
       textPrimary: '#353535',
       textSecondary: '#FFFFFF',
       textTertiary: '#464B54',
       textQuartiary: '#464B54',
+      textQuintiary: '#4A4441',
       textDefault: '#787D83'
     },
     extend: {
