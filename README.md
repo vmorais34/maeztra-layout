@@ -74,6 +74,8 @@ This boilerplate provides you with a starting point for your React projects, com
 <!-- CSS: prefixos de fornecedores (como -webkit-, -moz-, -ms-, etc.) -->
 - [SWC](https://swc.rs/)
 - [Yarn](https://yarnpkg.com/)
+- [Toastify](https://www.npmjs.com/package/react-toastify)
+- [React Slide](https://react-slick.neostack.com/docs/api/)
 
 ## Author
 
