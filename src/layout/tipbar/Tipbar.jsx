@@ -60,8 +60,8 @@ function Tipbar() {
           <div class="block">
             <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[370px]">
               <div class="flex">
-                <img src={`/maeztra-layout${TipBarGlobe}`} alt="Produto importados" class="w-full"/>
-                {/* <img src={TipBarGlobe} alt="Produto importados" class="w-full"/> */}
+                {/* <img src={`/maeztra-layout${TipBarGlobe}`} alt="Produto importados" class="w-full"/> */}
+                <img src={TipBarGlobe} alt="Produto importados" class="w-full"/>
               </div>
               <div class="flex flex-col items-start justify-start ml-4"> 
                 <span class="text-sm text-textPrimary"><strong>Produtos importados</strong></span>
@@ -73,8 +73,8 @@ function Tipbar() {
           <div class="block">
             <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[370px]">
               <div class="block">
-                <img src={`/maeztra-layout${TipBarStocks}`} alt="Estoque no Brazil" class="w-full"/>
-                {/* <img src={TipBarStocks} alt="Estoque no Brazil" class="w-full"/> */}
+                {/* <img src={`/maeztra-layout${TipBarStocks}`} alt="Estoque no Brazil" class="w-full"/> */}
+                <img src={TipBarStocks} alt="Estoque no Brazil" class="w-full"/>
               </div>
               <div class="flex flex-col items-start justify-start ml-4">
                 <span class="text-sm text-textPrimary"><strong>Estoque no Brazil</strong></span>
@@ -85,8 +85,8 @@ function Tipbar() {
           <div class="block">
             <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[370px]">
               <div class="block">
-                <img src={`/maeztra-layout${TipBarChange}`} alt="Trocas Garantidas" class="w-full"/>
-                {/* <img src={TipBarChange} alt="Trocas Garantidas" class="w-full"/> */}
+                {/* <img src={`/maeztra-layout${TipBarChange}`} alt="Trocas Garantidas" class="w-full"/> */}
+                <img src={TipBarChange} alt="Trocas Garantidas" class="w-full"/>
               </div>
               <div class="flex flex-col items-start justify-start ml-4">
                 <span class="text-sm text-textPrimary"><strong>Trocas Garantidas</strong></span>
@@ -97,8 +97,8 @@ function Tipbar() {
           <div class="block">
             <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[370px]">
               <div class="block">
-                <img src={`/maeztra-layout${TipBarOff}`} alt="Ganhe 5% off" class="w-full"/>
-                {/* <img src={TipBarOff} alt="Ganhe 5% off" class="w-full"/> */}
+                {/* <img src={`/maeztra-layout${TipBarOff}`} alt="Ganhe 5% off" class="w-full"/> */}
+                <img src={TipBarOff} alt="Ganhe 5% off" class="w-full"/>
               </div>
               <div class="flex flex-col items-start justify-start ml-4">
                 <span class="text-sm text-textPrimary"><strong>Ganhe 5% off</strong></span>
@@ -109,8 +109,8 @@ function Tipbar() {
           <div class="block">
           <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[370px]">
                 <div class="block">
-                  <img src={`/maeztra-layout${TipBarShipping}`} alt="Frete Grátis" class="w-full"/>
-                  {/* <img src={TipBarShipping} alt="Frete Grátis" class="w-full"/> */}
+                  {/* <img src={`/maeztra-layout${TipBarShipping}`} alt="Frete Grátis" class="w-full"/> */}
+                  <img src={TipBarShipping} alt="Frete Grátis" class="w-full"/>
                 </div>
                 <div class="flex flex-col items-start justify-start ml-4">
                   <span class="text-sm text-textPrimary"><strong>Frete Grátis</strong></span>
