@@ -35,7 +35,7 @@ function Spot() {
           <h5 class="text-textPrimary font-normal my-1 text-[12px] leading-[18px] opacity-50">
             A faux suede mini skirt featuring exposed button-front closures and panel seam construction.
           </h5>
-          <button onClick={handleBuyButton} class="focus:outline-none w-full transition-all bg-base hover:bg-base/90 hover:border-none border-none rounded font-normal text-[16px] leading-[24px] flex items-center justify-center h-[35px]">
+          <button onClick={handleBuyButton} class="text-primary focus:outline-none w-full transition-all bg-base hover:bg-base/90 hover:border-none border-none rounded font-normal text-[16px] leading-[24px] flex items-center justify-center h-[35px]">
             Adicionar
           </button>
         </article>

@@ -157,13 +157,13 @@ function Footer() {
             </div>
             <div class="flex items-center justify-center gap-5 w-full mt-4 lg:m-0 lg:w-auto">
               <div class="flex flex-col items-start lg:min-w-[68px] justify-between">
-                <span class="block w-full text-xs mb-1">
+                <span class="block w-full text-xs mb-1 text-primary">
                   Powered by                  
                 </span>
                 <img src={IconVTEX} class="w-full h-auto" alt="VTEX" />
               </div>
               <div class="flex flex-col items-start justify-between lg:min-h-[46px]">
-                <span class="block w-full text-xs mb-1">
+                <span class="block w-full text-xs mb-1 text-primary">
                   Develop by                  
                 </span>
                 <img src={IconMaeztra} class="w-full h-auto" alt="Maeztra" />

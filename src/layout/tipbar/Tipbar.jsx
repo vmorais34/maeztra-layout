@@ -20,9 +20,27 @@ function Tipbar() {
     draggable: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1920,
         settings: {
           slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          draggable: true
+        }
+      },
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          draggable: true
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           draggable: true
@@ -58,7 +76,7 @@ function Tipbar() {
       <div class="container mx-auto overflow-hidden pl-[30px]">
         <Slider {...settings}>
           <div class="block">
-            <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[370px]">
+            <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[320px] xl:max-w-[370px]">
               <div class="flex">
                 {/* <img src={`/maeztra-layout${TipBarGlobe}`} alt="Produto importados" class="w-full"/> */}
                 <img src={TipBarGlobe} alt="Produto importados" class="w-full"/>
@@ -71,7 +89,7 @@ function Tipbar() {
           </div>
 
           <div class="block">
-            <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[370px]">
+          <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[320px] xl:max-w-[370px]">
               <div class="block">
                 {/* <img src={`/maeztra-layout${TipBarStocks}`} alt="Estoque no Brazil" class="w-full"/> */}
                 <img src={TipBarStocks} alt="Estoque no Brazil" class="w-full"/>
@@ -83,7 +101,7 @@ function Tipbar() {
             </article>
           </div>
           <div class="block">
-            <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[370px]">
+          <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[320px] xl:max-w-[370px]">
               <div class="block">
                 {/* <img src={`/maeztra-layout${TipBarChange}`} alt="Trocas Garantidas" class="w-full"/> */}
                 <img src={TipBarChange} alt="Trocas Garantidas" class="w-full"/>
@@ -95,7 +113,7 @@ function Tipbar() {
             </article>
           </div>
           <div class="block">
-            <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[370px]">
+          <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[320px] xl:max-w-[370px]">
               <div class="block">
                 {/* <img src={`/maeztra-layout${TipBarOff}`} alt="Ganhe 5% off" class="w-full"/> */}
                 <img src={TipBarOff} alt="Ganhe 5% off" class="w-full"/>
@@ -107,7 +125,7 @@ function Tipbar() {
             </article>
           </div>
           <div class="block">
-          <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[370px]">
+          <article class="w-full flex-row items-center flex bg-tertiary rounded py-4 lg:px-8 px-5 h-16 max-w-[90%] lg:max-w-[320px] xl:max-w-[370px]">
                 <div class="block">
                   {/* <img src={`/maeztra-layout${TipBarShipping}`} alt="Frete Grátis" class="w-full"/> */}
                   <img src={TipBarShipping} alt="Frete Grátis" class="w-full"/>

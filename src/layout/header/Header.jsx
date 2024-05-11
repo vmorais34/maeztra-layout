@@ -34,7 +34,7 @@ function Header() {
             </div>
 
             <div class="flex items-center justify-between lg:w-full">
-              <div class="flex items-center justify-start pr-[10px] p-2 cursor-pointer lg:w-full lg:ml-24 lg:mr-8 lg:max-w-[791px]"> 
+              <div class="flex items-center justify-start pr-[10px] p-2 cursor-pointer lg:w-full lg:ml-24 lg:mr-8 lg:max-w-[791px] lg:py-0"> 
                 <input class="hidden lg:block w-full max-w-[672px] py-2 lg:bg-tertiary lg:rounded-r-none border-0 pl-6" type="text" placeholder="O Que Você Busca?"/>
                 <span class="hidden lg:block text-primary lg:bg-base lg:rounded-lg lg:min-w-[119px] text-center py-2 lg:-ml-2">
                   Buscar
