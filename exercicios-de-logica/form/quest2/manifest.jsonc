@@ -1,0 +1,44 @@
+// Descreva passo a passo como voce realizaria o deploy dessa aplicação, pre-suponha que o 
+// pull request ja esta aprovado e que a feature ja esta na branch correta na qual voce 
+// poderia prosseguir com o seu deploy, nosso objetivo aqui é entender os comandos de CLI 
+// que voce executaria para subir essa aplicação.
+
+//  O app usa o peerDepencies o que no obriga a rodar um major na versão
+// Ocasionando tbm a necessidade de atualizar o site editor se houver. 
+
+//  Primeiramente logamos na account do cliente
+// 1. vtex login maeztra
+// Na master iremos rodar o comando para instalar via CLI da vtex o app
+// Por ser um app beta é necessario liberação por parte da vtex
+// 1. vtex use dev-space 
+// 2. vtex install vtex.liveshopping@2.x
+// 2. vtex release major stable
+// 3. vtex use master
+// 4. vtex install maeztra@6.x
+// 5. https://developers.vtex.com/docs/guides/vtex-io-documentation-migrating-cms-settings-after-major-update
+
+{
+  "vendor": "maeztra",
+  "name": "store-theme",
+  "version": "5.1.0",
+  "builders": {
+    "styles": "2.x",
+    "store": "0.x",
+    "sitemap": "0.x",
+    "docs": "0.x"
+  },
+  "mustUpdateAt": "2018-09-05",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.store": "2.x",
+    "vtex.store-header": "2.x",
+    "vtex.visibility-layout": "0.x"
+  },
+  "peerDependencies": { 
+    "vtexventures.livestreaming": "0.x",
+    "vtex.reviews-and-ratings": "3.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

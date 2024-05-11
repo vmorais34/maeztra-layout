@@ -1,0 +1,95 @@
+{
+  "flex-layout.row#home-info-slider": {
+    "title": "MZ | Info Slider",
+    "props": {
+      "fullWidth": false,
+      "paddingTop": {
+        "desktop": 5,
+        "tablet": 5,
+        "phone": 0
+      },
+      "paddingBottom": {
+        "desktop": 6,
+        "tablet": 6,
+        "phone": 0
+      },
+      "marginTop": {
+        "desktop": 0,
+        "tablet": 0,
+        "phone": 0
+      },
+      "marginBottom": {
+        "desktop": 0,
+        "tablet": 0,
+        "phone": 0
+      },
+      "colGap": {
+        "desktop": 0,
+        "tablet": 0,
+        "phone": 0
+      },
+      "borderWidth": 0,
+      "colSizing": "auto",
+      "preventHorizontalStretch": false,
+      "horizontalAlign": "left",
+      "preserveLayoutOnMobile": false
+    },
+    "children": ["flex-layout.col#home-info-slider"]
+  },
+
+
+  "flex-layout.col#home-info-slider": {
+    "title": "Container",
+    "children":["list-context.info-card-list#info-card-container"]
+  },
+  
+  "list-context.info-card-list#info-card-container": {
+    "title": "Componente info card container",
+    "children":[
+      "slider-layout#info-card-container"
+    ],
+    "props": {
+        "infoCards": [
+            {
+                "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+                "imageActionUrl": "/call-to-action",      
+                "callToActionText": "Nome categoria",
+                "callToActionUrl": "/call-to-action"
+            },
+            {
+                "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+                "imageActionUrl": "/call-to-action",                   
+                "callToActionText": "Nome categoria",
+                "callToActionUrl": "/call-to-action"
+            },
+            {
+                "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+                "imageActionUrl": "/call-to-action",                   
+                "callToActionText": "Nome categoria",
+                "callToActionUrl": "/call-to-action"
+            },
+            {
+                "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+                "imageActionUrl": "/call-to-action",                   
+                "callToActionText": "Nome categoria",
+                "callToActionUrl": "/call-to-action"
+            }
+        ]
+    }
+  },
+
+  "slider-layout#info-card-container": {
+    "props": {
+        "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 2
+        },
+        "infinite": true,
+        "showNavigationArrows": "always",
+        "showPaginationDots": "never",
+        "fullWidth": true,
+        "arrowSize": 12
+    }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  // ### Condições produto disponivel
+  // nome do produto
+  // estrelas de avaliação
+  // id de referencia
+  // preço de lista
+  // preço
+  // opções de parcelamento
+  // seletor de SKU
+  // texto de avise-me
+  // inputs e botão de submit de avise-me
+
+  // Usando o doc de vtex.condition layout podemos notar que existe um bloco com props especificas para a PDP
+  // Feito isso basta encontrarmos a condição desejada que nesse caso é a isProductAvailable
+
+  //e então realizar a criação dos blocos que vão renderizar o produto disponivel e o indisponivel
+
+  "condition-layout.product#productAvailable": {
+    "props": {
+      "conditions": [
+        {
+          "conditions": [{"subject": "isProductAvailable"}]
+        }
+      ],
+      "Then": "flex-layout.col#right-col",
+      "Else": "flex-layout.col#right-col-unavailable"
+    }
+  },
+
+  "flex-layout.col#pdp-unavailable": {
+    "children": [
+        //Nome do Produto
+        "flex-layout.row#pdp-name",
+
+        // estrelas de avaliação
+        "product-rating-summary",
+
+        //Cód. Referencia
+        "product-identifier.product",
+        
+        "flex-layout.row#product-name",
+        "flex-layout.row#list-price-savings",
+        "flex-layout.row#selling-price",
+        "product-installments",
+        "sku-selector",
+
+        "rich-text#pdp-unavailable-title",
+
+        //Avise-me
+        "toggle-layout#message-unavailable"
+    ],
+    "props": {
+        "preserveLayoutOnMobile": true,
+        "preventVerticalStretch": true,
+        "preventHorizontalStretch": true,
+        "colSizing": "auto",
+        "blockClass": ["productInfo--pdp", "info-unavailable"]
+    }
+},
+
+"toggle-layout#message-unavailable": {
+  "title": "Exibir Mensagem Produto Indiponível?",
+  "children": [
+    "flex-layout.row#message-unavailable"
+  ],
+  "props": {
+      "renderChildren": true
+  }
+},
+
+"flex-layout.row#message-unavailable": {
+  "children": [
+      //Avise-me
+      "availability-notify"
+  ],
+  "props": {
+      "blockClass": "message-unavailable"
+  }
+},
+
+// Toggle component para os blocos de 
+// 1. texto de avise-me
+// 2. inputs e botão de submit de avise-me
+// 3. estrelas de avaliação
+
+//   "toggle-layout#category-banner-full": {
+//     "title": "Exibir Banner Topo?",
+//     "children": [
+//         "flex-layout.row#category-banner-full"
+//     ],
+//     "props": {
+//         "renderChildren": true
+//     }
+// },
+
+  "store.product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-main",
+      "flex-layout.row#description",
+      "flex-layout.row#specifications-title",
+      "product-specification-group#table",
+      "shelf.relatedProducts",
+      "product-reviews",
+      "product-questions-and-answers"
+    ]
+  },
+  "flex-layout.row#specifications-title": {
+    "children": [
+      "rich-text#specifications"
+    ]
+  },
+  "rich-text#specifications": {
+    "props": {
+      "text": "##### Product Specifications"
+    }
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4
+    },
+    "children": ["breadcrumb"]
+  },
+  "flex-layout.row#description": {
+    "props": {
+      "marginBottom": 7
+    },
+    "children": ["product-description"]
+  },
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7
+    },
+    "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
+  },
+
+  "stack-layout": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.row#product-image",
+      "product-bookmark",
+      "product-specification-badges"
+    ]
+  },
+
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "Group",
+      "specificationName": "On Sale",
+      "visibleWhen": "True",
+      "displayValue": "SPECIFICATION_NAME"
+    }
+  },
+
+  "flex-layout.col#stack": {
+    "children": ["stack-layout"],
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#product-image": {
+    "children": ["product-images"]
+  },
+  "product-images": {
+    "props": {
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "16:9"
+      },
+      "displayThumbnailsArrows": true
+    }
+  },
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-rating-summary",
+      "flex-layout.row#list-price-savings",
+      "flex-layout.row#selling-price",
+      "product-installments",
+      "product-separator",
+      "product-identifier.product",
+      "sku-selector",
+      "product-quantity",
+      "product-assembly-options",
+      "product-gifts",
+      "flex-layout.row#buy-button",
+      "availability-subscriber",
+      "shipping-simulator",
+      "share#default",
+      "product-reward-value"
+    ]
+  },
+
+  "flex-layout.row#product-name": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": ["vtex.store-components:product-name"]
+  },
+
+  "sku-selector": {
+    "props": {
+      "variationsSpacing": 3,
+      "showValueNameForImageVariation": true
+    }
+  },
+
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 7
+    },
+    "children": ["add-to-cart-button"]
+  }
+  
+  //--> novos componentes aqui
+}
